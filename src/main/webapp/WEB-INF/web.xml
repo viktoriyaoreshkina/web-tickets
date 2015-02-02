@@ -1,79 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://java.sun.com/xml/ns/javaee"
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-           version="3.0">
-
-
+         version="3.0">
     <servlet>
-        <servlet-name>Dispatcher</servlet-name>
-        <servlet-class>com.epam.vo.webtickets.servlet.Dispatcher</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CheckUser</servlet-name>
-        <servlet-class>com.epam.vo.webtickets.servlet.registration.CheckUser</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Registration</servlet-name>
-        <servlet-class>com.epam.vo.webtickets.servlet.registration.Registration</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Reservation</servlet-name>
-        <servlet-class>com.epam.vo.webtickets.servlet.reservation.Reservation</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>SuccessReservation</servlet-name>
-        <servlet-class>com.epam.vo.webtickets.servlet.reservation.SuccessReservation</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Buy</servlet-name>
-        <servlet-class>com.epam.vo.webtickets.servlet.reservation.Buy</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>SuccessBuy</servlet-name>
-        <servlet-class>com.epam.vo.webtickets.servlet.reservation.SuccessBuy</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>AddUser</servlet-name>
-        <servlet-class>com.epam.vo.webtickets.servlet.registration.AddUser</servlet-class>
+        <servlet-name>ControllerServlet</servlet-name>
+        <servlet-class>com.epam.vo.webtickets.servlet.ControllerServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>Dispatcher</servlet-name>
-        <url-pattern>/Dispatcher</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CheckUser</servlet-name>
-        <url-pattern>/CheckUser</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Registration</servlet-name>
-        <url-pattern>/Registration</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Reservation</servlet-name>
-        <url-pattern>/Reservation</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SuccessReservation</servlet-name>
-        <url-pattern>/SuccessReservation</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Buy</servlet-name>
-        <url-pattern>/Buy</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SuccessBuy</servlet-name>
-        <url-pattern>/SuccessBuy</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AddUser</servlet-name>
-        <url-pattern>/AddUser</url-pattern>
+        <servlet-name>ControllerServlet</servlet-name>
+        <url-pattern>/controller</url-pattern>
     </servlet-mapping>
 
-    <session-config><session-timeout>
-        30
-    </session-timeout></session-config>
+    <session-config>
+        <!--<session-timeout>1</session-timeout>-->
+        <!--default value is 30-->
+        <session-timeout>30</session-timeout>
+    </session-config>
 
 </web-app>
