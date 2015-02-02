@@ -8,35 +8,35 @@
 
     <servlet>
         <servlet-name>Dispatcher</servlet-name>
-        <servlet-class>com.epam.vo.servlet.Dispatcher</servlet-class>
+        <servlet-class>com.epam.vo.webtickets.servlet.Dispatcher</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CheckUser</servlet-name>
-        <servlet-class>com.epam.vo.servlet.registration.CheckUser</servlet-class>
+        <servlet-class>com.epam.vo.webtickets.servlet.registration.CheckUser</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Registration</servlet-name>
-        <servlet-class>com.epam.vo.servlet.registration.Registration</servlet-class>
+        <servlet-class>com.epam.vo.webtickets.servlet.registration.Registration</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Reservation</servlet-name>
-        <servlet-class>com.epam.vo.servlet.reservation.Reservation</servlet-class>
+        <servlet-class>com.epam.vo.webtickets.servlet.reservation.Reservation</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>SuccessReservation</servlet-name>
-        <servlet-class>com.epam.vo.servlet.reservation.SuccessReservation</servlet-class>
+        <servlet-class>com.epam.vo.webtickets.servlet.reservation.SuccessReservation</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Buy</servlet-name>
-        <servlet-class>com.epam.vo.servlet.reservation.Buy</servlet-class>
+        <servlet-class>com.epam.vo.webtickets.servlet.reservation.Buy</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>SuccessBuy</servlet-name>
-        <servlet-class>com.epam.vo.servlet.reservation.SuccessBuy</servlet-class>
+        <servlet-class>com.epam.vo.webtickets.servlet.reservation.SuccessBuy</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AddUser</servlet-name>
-        <servlet-class>com.epam.vo.servlet.registration.AddUser</servlet-class>
+        <servlet-class>com.epam.vo.webtickets.servlet.registration.AddUser</servlet-class>
     </servlet>
 
     <servlet-mapping>

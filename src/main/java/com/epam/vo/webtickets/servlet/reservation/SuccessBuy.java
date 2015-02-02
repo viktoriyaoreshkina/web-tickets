@@ -1,7 +1,7 @@
-package com.epam.vo.servlet.reservation;
+package com.epam.vo.webtickets.servlet.reservation;
 
 
-import com.epam.vo.servlet.Dispatcher;
+import com.epam.vo.webtickets.servlet.Dispatcher;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -9,8 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class SuccessReservation extends Dispatcher {
-
+public class SuccessBuy extends Dispatcher{
     public String getServletInfo() {
         return "Registration servlet";
     }

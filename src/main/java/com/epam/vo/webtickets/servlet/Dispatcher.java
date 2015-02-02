@@ -1,4 +1,4 @@
-package com.epam.vo.servlet;
+package com.epam.vo.webtickets.servlet;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

@@ -1,6 +1,4 @@
-package com.epam.vo.servlet.registration;
-
-import com.epam.vo.servlet.registration.User;
+package com.epam.vo.webtickets.servlet.registration;
 
 import java.util.HashMap;
 import java.util.Map;

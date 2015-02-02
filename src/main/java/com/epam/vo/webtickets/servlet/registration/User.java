@@ -1,4 +1,4 @@
-package com.epam.vo.servlet.registration;
+package com.epam.vo.webtickets.servlet.registration;
 
 
 public class User {

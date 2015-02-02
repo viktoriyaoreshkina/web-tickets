@@ -1,4 +1,4 @@
-<%@ page import="com.epam.vo.servlet.*" %>
+<%@ page import="com.epam.vo.webtickets.servlet.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -8,7 +8,7 @@
 <body>
 <form action="SuccessReservation" method="post">
   <h2>Бронирование успешно завершено</h2>
-  <jsp:useBean id="dispatcher" class="com.epam.vo.servlet.Dispatcher" scope="application"/>
+  <jsp:useBean id="dispatcher" class="com.epam.vo.webtickets.servlet.Dispatcher" scope="application"/>
   Осталось свободных билетов: <%= dispatcher.getCountAll()%><br>
   <p>
   <table>

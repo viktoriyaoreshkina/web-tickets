@@ -1,4 +1,4 @@
-<%@ page import="com.epam.vo.servlet.*" %>
+<%@ page import="com.epam.vo.webtickets.servlet.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -9,7 +9,7 @@
 <br>
 <h1>Покупка билетов</h1>
 <form action="Buy" method="post">
-  <jsp:useBean id="dispatcher" class="com.epam.vo.servlet.Dispatcher" scope="application"/>
+  <jsp:useBean id="dispatcher" class="com.epam.vo.webtickets.servlet.Dispatcher" scope="application"/>
   Сейчас свободных билетов: <%= dispatcher.getCountAll()%><br>
   Дата концерта:      <input type="text" name="date" size="10"><br>
   Название концерта:  <input type="text" name="name_concert" size="10"><br>

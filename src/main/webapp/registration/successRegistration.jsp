@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Регистрация посетителя успешно завершена</h1>
-<jsp:useBean id="user" class="com.epam.vo.servlet.registration.User" scope="application"/>
+<jsp:useBean id="user" class="com.epam.vo.webtickets.servlet.registration.User" scope="application"/>
 Пользователь: <%= user.getUser()%><br>
 Email: <%= user.getEmail()%><br>
 Адрес: <%= user.getAddress()%><br>

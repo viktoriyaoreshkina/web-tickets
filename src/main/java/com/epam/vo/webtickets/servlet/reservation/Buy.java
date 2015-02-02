@@ -1,6 +1,7 @@
-package com.epam.vo.servlet.reservation;
+package com.epam.vo.webtickets.servlet.reservation;
 
-import com.epam.vo.servlet.Dispatcher;
+
+import com.epam.vo.webtickets.servlet.Dispatcher;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -8,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class Reservation extends Dispatcher {
+public class Buy extends Dispatcher{
     public String getServletInfo(){
         return "Reservation servlet";
     }
@@ -16,19 +17,19 @@ public class Reservation extends Dispatcher {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         ServletContext ctx = getServletContext();
-        if (request.getParameter("reservation")!=null) {
+        if (request.getParameter("buy")!=null) {
 
-             String count_res_s = request.getParameter("count_res");
-            int countRes = Integer.valueOf(count_res_s);
+            String count_buy_s = request.getParameter("count_buy");
+            int countBuy = Integer.valueOf(count_buy_s);
 
 
             Dispatcher newDispatcher = new Dispatcher();
-            newDispatcher.setCountRes(countRes);
+            newDispatcher.setCountBuy(countBuy);
 
-            ctx.setAttribute("count_res", newDispatcher);
-            Dispatcher.setCountAll(Dispatcher.getCountAll() - countRes);
+            ctx.setAttribute("count_buy", newDispatcher);
+            Dispatcher.setCountAll(Dispatcher.getCountAll() - countBuy);
 
-            this.forward("/reservation_sale/successReservation.jsp", request, response);
+            this.forward("/reservation_sale/successBuy.jsp", request, response);
         } else if ((request.getParameter("cancel")!=null) & (Dispatcher.getCountAll() != 0) ){
             this.forward("/index.jsp", request, response);
         }

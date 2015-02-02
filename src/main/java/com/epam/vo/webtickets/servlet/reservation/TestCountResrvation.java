@@ -1,4 +1,4 @@
-package com.epam.vo.servlet.reservation;
+package com.epam.vo.webtickets.servlet.reservation;
 
 /**
  * проверка, что в поле "количество бронируемых билетов" стоит не ноль и не пусто

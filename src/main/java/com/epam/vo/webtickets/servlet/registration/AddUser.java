@@ -1,6 +1,6 @@
-package com.epam.vo.servlet.registration;
+package com.epam.vo.webtickets.servlet.registration;
 
-import com.epam.vo.servlet.Dispatcher;
+import com.epam.vo.webtickets.servlet.Dispatcher;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

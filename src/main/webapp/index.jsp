@@ -9,7 +9,7 @@
 <br>
 <h1>Вход в систему</h1>
 <form action="Registration" method="post">
-  <jsp:useBean id="dispatcher" class="com.epam.vo.servlet.Dispatcher" scope="application"/>
+  <jsp:useBean id="dispatcher" class="com.epam.vo.webtickets.servlet.Dispatcher" scope="application"/>
   Сейчас свободных билетов: <%= bd dispatcher.getCountAll()%><% try {
 } catch (Exception e) {
 } %><br>
