@@ -1,10 +1,12 @@
 package epam.com.vo.bd;
 
+import org.apache.log4j.Logger;
+
 import java.sql.*;
-import java.util.logging.Logger;
 
 public class Bd {
-    private static final Logger logger = Logger.getLogger("Bd.class");
+//    private static final Logger logger = Logger.getLogger("epam.com.vo.bd.Bd");
+    private static final Logger logger = Logger.getLogger(Bd.class);
 
     public static void main(String[] args) throws ClassNotFoundException {
 
@@ -21,7 +23,7 @@ public class Bd {
 
             while (rs.next()){
                 System.out.println(rs.getInt("count"));
-                private static int i = rs.getInt("count");
+                int i = rs.getInt("count");
             }
 
         }

@@ -9,6 +9,7 @@
 <br>
 <h1>Вход посетителя в систему прошел успешно</h1>
 <jsp:useBean id="user" class="com.epam.vo.webtickets.servlet.registration.User" scope="application"/>
+
 Пользователь: <%= user.getUser()%><br>
 Email: <%= user.getEmail()%><br>
 Адрес: <%= user.getAddress()%><br>
