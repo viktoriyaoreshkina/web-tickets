@@ -29,8 +29,8 @@ public class Reservation extends Dispatcher {
             Dispatcher.setCountAll(Dispatcher.getCountAll() - countRes);
 
             this.forward("/reservation_sale/successReservation.jsp", request, response);
-        } else if ((request.getParameter("cancel")!=null) & (Dispatcher.getCountAll() != 0) ){
+        } /*else if ((request.getParameter("cancel")!=null) & (Dispatcher.getCountAll() != 0) ){
             this.forward("/index.jsp", request, response);
-        }
+        }*/
     }
 }

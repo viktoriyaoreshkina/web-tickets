@@ -31,7 +31,7 @@ public class Buy extends Dispatcher{
 
             this.forward("/reservation_sale/successBuy.jsp", request, response);
         } else if ((request.getParameter("cancel")!=null) & (Dispatcher.getCountAll() != 0) ){
-            this.forward("/index.jsp", request, response);
+          //  this.forward("/index.jsp", request, response);
         }
     }
 }

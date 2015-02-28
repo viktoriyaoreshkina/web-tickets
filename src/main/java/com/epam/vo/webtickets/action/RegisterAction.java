@@ -14,5 +14,7 @@ public class RegisterAction implements Action {
         // TODO insert user into db logic
 
         return "redirect:/successRegister";
+       // return "successRegister";
+
     }
 }

@@ -26,8 +26,8 @@ public class SuccessReservation extends Dispatcher {
         } else if ((request.getParameter("reservation") != null) || (request.getParameter("buy") != null) & (Dispatcher.getCountAll() == 0)) {
             this.forward("/reservation_sale/noTicket.html", request, response);
         }
-        if (request.getParameter("cancel") != null) {
+       /* if (request.getParameter("cancel") != null) {
             this.forward("/index.jsp", request, response);
-        }
+        }*/
     }
 }
